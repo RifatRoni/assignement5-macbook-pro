@@ -1,0 +1,8 @@
+/* promo code field and button css */
+.field-width {
+    display: inline;
+    width:62%;
+}
+.promo-button {
+    vertical-align: baseline;
+}

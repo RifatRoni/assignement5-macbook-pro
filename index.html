@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook Pro</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+    <!-- section container -->
+    <div class="container">
+      <div class="row mt-5">
+        <!-- image part -->
+        <div class="col-lg-6">
+          <img class="img-fluid" src="images/mac.png" alt="">
+        </div>
+
+        <!-- information part -->
+        <div class="col-lg-6 mb-4">
+          <!-- title and descripton -->
+          <h1>Customize Your Blue 24-inch iMac with Apple M1 chip</h1>
+          <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU and 16-core Neutral Engine 8GB unified memory 256GB SSD storage TWo Thunderbolt/USB 4 ports Magic Mouse Magic Keyboard US English</p>
+
+          <!-- customize memory -->
+          <div class="mt-4">
+            <h5>Memory</h5>
+            <button id="basic-memory-8gb" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+            <button id="update-memory-16gb" type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+          </div>
+
+          <!-- customize storage -->
+          <div class="mt-4">
+            <h5>Storage</h5>
+            <button id="basic-storage-256gb" type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
+            <button id="medium-storage-512gb" type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
+            <button id="hight-storage-high-1tb" type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
+          </div>
+
+          <!-- customize delivery option -->
+          <div class="mt-4">
+            <h5>Choose your delivery option</h5>
+            <button id="free-delivery" type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime Delivery</button>
+            <button id="charged-delivery" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
+          </div>
+
+
+          <!-- total details calculation part -->         
+          <div class="mt-4">      
+            <table class="table w-75">
+              <tbody class="fw-bold">
+                <tr>
+                  <td>Best Price</td>
+                  <td>$<span id="best-main-price">1299</span></td>
+                </tr>
+                <tr>
+                  <td>Extra Memory Cost</td>
+                  <td>$<span id="memory-cost">0</span></td>
+                </tr>
+                <tr>
+                  <td>Extra Storage Cost</td>
+                  <td>$<span id="storage-cost">0</span> </td>
+                </tr>
+                <tr>
+                  <td>Delivery charge</td>
+                  <td>$<span id="delivery-cost">0</span></td>
+                </tr>
+                <tr>
+                  <td>Total Price</td>
+                  <td>$<span id="gross-total-cost">1299</span></td>
+                </tr>             
+              </tbody>
+            </table>     
+          </div>
+
+          <!-- add promo Code  -->
+          <div class="mt-4">
+            <input id="mac-promo-code" type="text" class="form-control field-width" name="promo" >
+            <button id="apply-promo-button" type="button" class="btn btn-danger promo-button">Apply</button>
+          </div>
+
+        </div>
+        
+        <!-- horizontal line -->
+        <hr>
+
+        <!-- total details calculation part -->
+        <h1 class="text-center">Total: $<span id="net-total-cost">1299</span></h1>
+      </div>
+      
+    </div>
+  </section>
+    
+
+    <!-- Bootstrap javascript script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- My main javascript script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
